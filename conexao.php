@@ -12,22 +12,52 @@ $servidor = "localhost";
 
 
 if (isset($_POST['cad_i'])) {
-		$cnpj = $_POST['cnpj'];
-		$nome_i = $_POST['nome_imobiliaria'];
-		$site = $_POST['site'];
-		$telefone = $_POST['telefone'];
-
-		$q = "INSERT INTO imobiliaria (cnpj, nome_imobiliaria, site, telefone) VALUES ('$cnpj', '$nome_i', '$site', $telefone)";
-
-		mysqli_query($db, $q);
 
 
-		header('Location: ./adm_imobiliaria.php');
+
+		if(isset($_SESSION['cnpj_i'])){
+			//UPDATE `imobiliaria` SET `nome_imobiliaria` = 'imobiliaria tabuleirenseoooo' WHERE `imobiliaria`.`cnpj` = '00.32.98/0441-89';
+			$cnpj_i = $_SESSION['cnpj_i'];
+			$nome_i = $_POST['nome_imobiliaria'];
+			$site_imobiliaria = $_POST['site_imobiliaria'];
+			$telefone = $_POST['telefone'];
+			$query = "UPDATE imobiliaria SET nome_imobiliaria = '{$nome_imobiliaria}', site_imobiliaria = '{$site_imobiliaria}', telefone = '{$telefone}' WHERE imobiliaria.cnpj = '{$cnpj_i}'";
+			mysqli_query($db, $query);
+			unset($_SESSION['cnpj_i']);
+			header('Location: ./adm_imobiliaria.php');
+
+		}else{
+			try {
+				$cnpj = $_POST['cnpj'];
+				$nome_i = $_POST['nome_imobiliaria'];
+				$site_imobiliaria = $_POST['site_imobiliaria'];
+				$telefone = $_POST['telefone'];
+				$query = "INSERT INTO imobiliaria (cnpj, nome_imobiliaria, site_imobiliaria, telefone) VALUES ('{$cnpj}', '{$nome_i}', '{$site}', '{$telefone}')";
+				mysqli_query($db, $query);
+				header('Location: ./adm_imobiliaria.php');
+			} catch (Exception $e) {
+				echo 'Exceção: ',  $e->getMessage(), "\n";
+			}
+
+		}
+		
+
+		
+
+
+		
 
 
 
 }
 
+
+if(isset($_GET['edit_i'])){
+	$_SESSION['cnpj_i'] = $_GET['edit_i'];
+
+	header('Location: cad_imobiliaria.php');
+
+}
 
 if (isset($_GET['del'])) {
 	$cnpj = $_GET['del'];

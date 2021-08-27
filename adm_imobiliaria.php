@@ -1,6 +1,6 @@
 <?php
  include 'conexao.php';
- session_start();
+ 
 
  $select_todas = 'select * from imobiliaria';
 
@@ -58,13 +58,13 @@
                               <tr style="border-style: solid">
                                   <td><?php echo $res['cnpj']; ?></td>
                                   <td><?php echo $res['nome_imobiliaria']; ?></td>
-                                  <td><?php echo $res['site']; ?></td>
+                                  <td><?php echo $res['site_imobiliaria']; ?></td>
                                   <td><?php echo $res['telefone']; ?></td>
 
 
 
                                   <td>
-                                    <a href="#" class="btn btn-warning">Editar</a>
+                                    <a href="./conexao.php?edit_i=<?php echo $res['cnpj'];?>" class="btn btn-warning">Editar</a>
                                     <a href="./conexao.php?del=<?php echo $res['cnpj'];?>" class="btn btn-danger">Cancelar</a>
                                   </td>
                               </tr>
