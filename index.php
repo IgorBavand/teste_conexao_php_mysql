@@ -22,6 +22,8 @@ text-align: center;
 top: 0;
 background-size: cover;
 }
+
+
 	</style>
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -35,7 +37,7 @@ background-size: cover;
 
 			<div class="col-lg-4">
 			<img class="rounded-circle" src="img/imobiliaria.jpg" alt="Generic placeholder image" width="140" height="140">
-			<h2>Mobiliarias</h2>
+			<h2 class="op">Mobiliarias</h2>
 			<p></p>
             <p><a class="btn btn-primary" href="adm_imobiliaria.php" role="button">Administrar Imobiliárias &raquo;</a></p>
 			</div>
@@ -51,7 +53,7 @@ background-size: cover;
 			<img class="rounded-circle" src="img/locatario.png" alt="Generic placeholder image" width="140" height="140">
 			<h2>Locatários</h2>
 			<p></p>
-            <p><a class="btn btn-primary" href="#" role="button">Administrar Locatários &raquo;</a></p>
+            <p><a class="btn btn-primary" href="adm_locatario.php" role="button">Administrar Locatários &raquo;</a></p>
 			</div>
 
 			<div class="col-lg-4">
@@ -68,13 +70,13 @@ background-size: cover;
             <p><a class="btn btn-primary" href="#" role="button">Administrar Imóveis &raquo;</a></p>
 			</div>
 
-			
+
 
 		</div>
 
 	</div>
 
 
-		
+
 	</body>
 </html>

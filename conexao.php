@@ -39,16 +39,8 @@ if (isset($_POST['cad_i'])) {
 			}
 
 		}
-		
+	}
 
-		
-
-
-		
-
-
-
-}
 
 
 if(isset($_GET['edit_i'])){
