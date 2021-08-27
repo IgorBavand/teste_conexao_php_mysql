@@ -4,25 +4,24 @@
 
 	<style>
 		.texto{
-			text-align: center;
-		}
-		.bc
-{
-    background-image: url('img/fundo.jpg');
-    background-repeat: no-repeat;
-    background-size:100%;
-    bottom: 0;
-    color: black;
-    left: 0;
-    overflow: auto;
-    padding: 3em;
-    position: absolute;
-    right: 0;
     text-align: center;
-    top: 0;
-    background-size: cover;
 }
-
+.bc
+{
+background-image: url('img/fundo.jpg');
+background-repeat: no-repeat;
+background-size:100%;
+bottom: 0;
+color: black;
+left: 0;
+overflow: auto;
+padding: 3em;
+position: absolute;
+right: 0;
+text-align: center;
+top: 0;
+background-size: cover;
+}
 	</style>
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 

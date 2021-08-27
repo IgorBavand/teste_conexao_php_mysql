@@ -44,7 +44,7 @@ if(isset($_SESSION['cnpj_i'])){
 
       <div class="form-group">
         <label for="site">SITE</label>
-        <input type="text" name="site" id="site" placeholder="Digite o site..." value="<?php if(isset($_SESSION['cnpj_i'])) echo $res['site_imobiliaria'];?>" required>
+        <input type="text" name="site_i" id="site" placeholder="Digite o site..." value="<?php if(isset($_SESSION['cnpj_i'])) echo $res['site_imobiliaria'];?>" required>
       </div>
 
       <div class="form-group">

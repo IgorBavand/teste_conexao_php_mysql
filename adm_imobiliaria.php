@@ -16,8 +16,30 @@
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+
+    <style>
+      .texto{
+    text-align: center;
+}
+.bc
+{
+background-image: url('img/fundo.jpg');
+background-repeat: no-repeat;
+background-size:100%;
+bottom: 0;
+color: black;
+left: 0;
+overflow: auto;
+padding: 3em;
+position: absolute;
+right: 0;
+text-align: center;
+top: 0;
+background-size: cover;
+}
+    </style>
   </head>
-  <body>
+  <body class="bc">
 
     <div class="container mt-auto">
       <div class="text-center">
@@ -38,10 +60,19 @@
               <?php endif ?>
               <?php $reg = mysqli_query($db, 'select * from imobiliaria'); ?>
 
-              <p>Quantidade de imobiliarias cadastradas: <?php echo mysqli_num_rows($reg) ?> </p>
+              
+                <div class="row d-flex justify-content-center" >
+                <p>Quantidade de imobiliarias cadastradas: <?php echo mysqli_num_rows($reg) ?> </p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                <p><a href="cad_imobiliaria.php" class="btn btn-primary">Cadastrar nova imobiliaria</a></p>
 
-              <p><a href="cad_imobiliaria.php" class="btn btn-primary">Cadastrar nova imobiliaria</a></p>
-      <table class="table table-striped">
+
+
+              </div>
+
+              
+      <table class="table table-dark">
         <thead>
             <tr id="teste">
                               <th>CNPJ</th>
