@@ -61,8 +61,8 @@ background-size: cover;
               <?php $reg = mysqli_query($db, 'select * from imobiliaria'); ?>
 
               
-                <div class="row d-flex justify-content-center" >
-                <p>Quantidade de imobiliarias cadastradas: <?php echo mysqli_num_rows($reg) ?> </p>
+                <div class="row d-flex justify-content-center alert alert-primary" >
+                <p class="font-weight-bold">Quantidade de imobiliarias cadastradas: <?php echo mysqli_num_rows($reg) ?> </p>
                 </div>
                 <div class="row d-flex justify-content-center">
                 <p><a href="cad_imobiliaria.php" class="btn btn-primary">Cadastrar nova imobiliaria</a></p>
