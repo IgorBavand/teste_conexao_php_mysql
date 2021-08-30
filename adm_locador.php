@@ -1,8 +1,8 @@
 <?php
  include 'conexao.php';
- 
 
- $select_todas = 'select * from imobiliaria';
+
+ $select_todas = 'select * from locador';
 
  $resultado = mysqli_query($db, $select_todas);
 
@@ -58,27 +58,29 @@ background-size: cover;
 
 
               <?php endif ?>
-              <?php $reg = mysqli_query($db, 'select * from imobiliaria'); ?>
+              <?php $reg = mysqli_query($db, 'select * from locador'); ?>
 
-              
+
                 <div class="row d-flex justify-content-center alert alert-primary" >
-                <p class="font-weight-bold">Quantidade de imobiliarias cadastradas: <?php echo mysqli_num_rows($reg) ?> </p>
+                <p class="font-weight-bold">Quantidade de locadores cadastrados: <?php echo mysqli_num_rows($reg) ?> </p>
                 </div>
                 <div class="row d-flex justify-content-center">
-                <p><a href="cad_imobiliaria.php" class="btn btn-primary">Cadastrar nova imobiliaria</a></p>
+                <p><a href="cad_locador.php" class="btn btn-primary">Cadastrar novo locador</a></p>
 
 
 
               </div>
 
-              
+
       <table class="table table-dark">
         <thead>
             <tr id="teste">
-                              <th>CNPJ</th>
+                              <th>CPF</th>
                               <th>Nome</th>
-                              <th>Site</th>
+                              <th>Email</th>
                               <th>Telefone</th>
+                              <th>Escritura</th>
+                              <th>Data de nascimento/th>
                               <th>Ações</th>
 
                               <th colspan="2"></th>
@@ -87,16 +89,18 @@ background-size: cover;
                       <tbody>
                           <?php while ($res = mysqli_fetch_assoc($resultado)) { ?>
                               <tr style="border-style: solid">
-                                  <td><?php echo $res['cnpj']; ?></td>
-                                  <td><?php echo $res['nome_imobiliaria']; ?></td>
-                                  <td><?php echo $res['site_imobiliaria']; ?></td>
+                                  <td><?php echo $res['cpf_locador']; ?></td>
+                                  <td><?php echo $res['nome_locador']; ?></td>
+                                  <td><?php echo $res['email']; ?></td>
                                   <td><?php echo $res['telefone']; ?></td>
+                                  <td><?php echo $res['escritura']; ?></td>
+                                  <td><?php echo $res['data_nasc']; ?></td>
 
 
 
                                   <td>
-                                    <a href="./conexao.php?edit_i=<?php echo $res['cnpj'];?>" class="btn btn-warning">Editar</a>
-                                    <a href="./conexao.php?del=<?php echo $res['cnpj'];?>" class="btn btn-danger">Cancelar</a>
+                                    <a href="./controller/controller_locador.php?edit_lcd=<?php echo $res['cpf_locador'];?>" class="btn btn-warning">Editar</a>
+                                    <a href="./controller/controller_locador.php?del_lcd=<?php echo $res['cpf_locador'];?>" class="btn btn-danger">Cancelar</a>
                                   </td>
                               </tr>
                           <?php } ?>

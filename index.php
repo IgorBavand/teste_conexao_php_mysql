@@ -46,7 +46,7 @@ background-size: cover;
 			<img class="rounded-circle" src="img/locador.png" alt="Generic placeholder image" width="140" height="140">
 			<h2>Locadores</h2>
 			<p></p>
-            <p><a class="btn btn-primary" href="#" role="button">Administrar Locadores &raquo;</a></p>
+            <p><a class="btn btn-primary" href="adm_locador.php" role="button">Administrar Locadores &raquo;</a></p>
 			</div>
 
 			<div class="col-lg-4">
