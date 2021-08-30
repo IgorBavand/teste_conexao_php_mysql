@@ -3,7 +3,7 @@ include 'conexao.php';
 
 
 if(isset($_SESSION['cpf_lcd'])){
-  $r = mysqli_query($db, "SELECT * FROM dor WHERE cpf_locador='{$_SESSION['cpf_lcd']}'");
+  $r = mysqli_query($db, "SELECT * FROM locador WHERE cpf_locador='{$_SESSION['cpf_lcd']}'");
   $res = mysqli_fetch_assoc($r);
 }
 ?>
@@ -26,15 +26,15 @@ if(isset($_SESSION['cpf_lcd'])){
       <?php if(isset($_SESSION['cpf_lcd'])){ ?>
 
         <div class="form-group">
-          <label for="cpf">CPF</label>
-          <input required type="text" id="cpf" class="form-control" name="cpf" placeholder="Digite o CPF..." maxlength="30" value="<?php if(isset($_SESSION['cpf_lcd'])) echo $res['cpf_locador'];?>" disabled >
+          <label for="cpf_locador">CPF</label>
+          <input required type="text" id="cpf_locador" class="form-control" name="cpf_locador" placeholder="Digite o CPF..." maxlength="30" value="<?php if(isset($_SESSION['cpf_lcd'])) echo $res['cpf_locador'];?>" disabled >
         </div>
 
         <?php }else{ ?>
 
           <div class="form-group">
-            <label for="cpf">CPF</label>
-            <input required type="text" id="cpf" class="form-control" name="cpf" placeholder="Digite o CPF..." maxlength="30" value="<?php if(isset($_SESSION['cpf_lcd'])) echo $res['cpf_locador'];?>" >
+            <label for="cpf_locador">CPF</label>
+            <input required type="text" id="cpf_locador" class="form-control" name="cpf_locador" placeholder="Digite o CPF..." maxlength="30" value="<?php if(isset($_SESSION['cpf_lcd'])) echo $res['cpf_locador'];?>" >
           </div>
 
         <?php } ?>
@@ -45,7 +45,7 @@ if(isset($_SESSION['cpf_lcd'])){
 
         <div class="form-group">
           <label for="nome_lc">NOME</label>
-          <input type="text" id="nome_lc" name="nome_lc" class="form-control" placeholder="Digite o nome..." value="<?php if(isset($_SESSION['cpf_lcd'])) echo $res['nome_locador'];?>" required>
+          <input type="text" id="nome_lcd" name="nome_lcd" class="form-control" placeholder="Digite o nome..." value="<?php if(isset($_SESSION['cpf_lcd'])) echo $res['nome_locador'];?>" required>
         </div>
 
         <div class="form-group">

@@ -80,7 +80,7 @@ background-size: cover;
                               <th>Email</th>
                               <th>Telefone</th>
                               <th>Escritura</th>
-                              <th>Data de nascimento/th>
+                              <th>Data de nascimento</th>
                               <th>Ações</th>
 
                               <th colspan="2"></th>
