@@ -60,7 +60,7 @@ background-size: cover;
 			<img class="rounded-circle" src="img/consultor.jpg" alt="Generic placeholder image" width="140" height="140">
 			<h2>Consultores</h2>
 			<p></p>
-            <p><a class="btn btn-primary" href="#" role="button">Administrar Consultores &raquo;</a></p>
+            <p><a class="btn btn-primary" href="adm_consultor.php" role="button">Administrar Consultores &raquo;</a></p>
 			</div>
 
 			<div class="col-lg-4">
