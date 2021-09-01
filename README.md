@@ -12,9 +12,9 @@
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://i.ibb.co/ZTkJ5kB/dfdfdfdf.png" width="100px;" /><br>
+        <img src="https://i.ibb.co/pdDvxzp/Whats-App-Image-2021-09-01-at-08-59-30.jpg" width="100px;" /><br>
         <sub>
-          <b>test</b>
+          <b>MILENA GOMES</b>
         </sub>
       </a>
     </td>
