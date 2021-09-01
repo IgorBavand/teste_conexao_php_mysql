@@ -48,6 +48,8 @@ background-size: cover;
 
 
       <div class="container">
+        <p><a class="btn btn-secondary ml-3" href="index.php">Home</a></p>
+
 
         <div class="form-group">
             <a href="controller/controller_con.php?busca=consimovel" class="form-control btn btn-primary">Imobiliaria & Consultor</a>

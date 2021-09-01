@@ -1,6 +1,6 @@
 <?php
  include 'conexao.php';
- 
+
 
  $select_todas = 'select * from consultor';
 
@@ -60,18 +60,20 @@ background-size: cover;
               <?php endif ?>
               <?php $reg = mysqli_query($db, 'select * from consultor'); ?>
 
-              
+
                 <div class="row d-flex justify-content-center alert alert-primary" >
                 <p class="font-weight-bold">Quantidade de consultores cadastrados: <?php echo mysqli_num_rows($reg) ?> </p>
                 </div>
                 <div class="row d-flex justify-content-center">
                 <p><a href="cad_consultor.php" class="btn btn-primary">Cadastrar novo consultor</a></p>
+                <p><a class="btn btn-secondary ml-3" href="index.php">Home</a></p>
+
 
 
 
               </div>
 
-              
+
       <table class="table table-dark">
         <thead>
             <tr id="teste">
@@ -98,12 +100,12 @@ background-size: cover;
                                   <td><?php echo $res['cep']; ?></td>
                                   <td><?php echo $res['cidade']; ?></td>
 
-                                  <td><?php 
+                                  <td><?php
 
                                   $aux_i = $res['imobiliaria_cnpj'];
-                                  
+
                                   $aux_im = mysqli_query($db, "SELECT nome_imobiliaria from imobiliaria WHERE cnpj = '{$aux_i}'");
-                                  
+
                                   while($res_i = mysqli_fetch_assoc($aux_im)){
                                     echo  $res_i['nome_imobiliaria'];
                                   }
@@ -112,19 +114,19 @@ background-size: cover;
                                   ?></td>
 
 
-                                <td><?php 
+                                <td><?php
 
                                   $aux_l = $res['locatario_cpf'];
-                                  
+
                                   $aux_lc = mysqli_query($db, "SELECT nome_locatario from locatario WHERE cpf_locatario = '{$aux_l}'");
-                                  
+
                                   while($res_l = mysqli_fetch_assoc($aux_lc)){
                                     echo  $res_l['nome_locatario'];
                                   }
 
 
                                   ?></td>
-                                  
+
 
 
 

@@ -59,7 +59,7 @@ background-size: cover;
 
             <div class="row">
 
-              <h4> <?php echo $res['rua']; ?> </h4>
+              <h4> <?php echo 'rua -'. $res['rua']; ?> </h4>
               <h4><?php echo '    -    '.$res['status_imovel']?></h4>
               <h4><?php echo '    -    '.$res['qtd_quartos'].' quartos e '?></h4>
               <h4><?php echo '    -    '.$res['qtd_banheiros'].' banheiros'?></h4>

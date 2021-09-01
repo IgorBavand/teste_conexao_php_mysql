@@ -17,7 +17,7 @@ if(isset($_SESSION['cnpj_i'])){
   </head>
   <body>
 
-  
+
     <form method="post" action="conexao.php">
 
 
@@ -35,7 +35,7 @@ if(isset($_SESSION['cnpj_i'])){
         <input type="text" id="cnpj" class="form-group" name="cnpj" placeholder="Digite o CNPJ..." maxlength="30" value="<?php if(isset($_SESSION['cnpj_i'])) echo $res['cnpj'];?>" required>
       </div>
 
-      <?php } ?> 
+      <?php } ?>
 
       <div class="form-group">
         <label for="nome_i">NOME</label>
@@ -53,18 +53,25 @@ if(isset($_SESSION['cnpj_i'])){
 
       </div>
 
-      <button type="submit" name="cad_i" class="btn-btn-success">
 
-        <?php 
+    
+
+
+      <button type="submit" class="btn btn-success" name="cad_i">
+
+        <?php
           if(isset($_SESSION['cnpj_i'])){
             echo 'Editar';
           }else{
             echo 'Cadastrar';
-          }  
+          }
         ?>
 
-
       </button>
+
+
+
+
 
     </form>
   </body>

@@ -2,7 +2,7 @@
 
 session_start();
 
-$servidor = "127.0.0.1";
+	$servidor = "127.0.0.1";
 	$usuario = "milena";
 	$senha = "12345";
 	$dbname = "alugue_facil";

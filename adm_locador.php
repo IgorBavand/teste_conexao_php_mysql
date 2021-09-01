@@ -43,7 +43,7 @@ background-size: cover;
 
     <div class="container mt-auto">
       <div class="text-center">
-        <h1>Imobiliárias</h1>
+        <h1>Locadores</h1>
       </div>
 
 
@@ -66,6 +66,8 @@ background-size: cover;
                 </div>
                 <div class="row d-flex justify-content-center">
                 <p><a href="cad_locador.php" class="btn btn-primary">Cadastrar novo locador</a></p>
+                <p><a class="btn btn-secondary ml-3" href="index.php">Home</a></p>
+
 
 
 

@@ -26,7 +26,7 @@ if(isset($_POST['cad_c'])){
   }else{
     $cpf = $_SESSION['cons'];
   }
-    //$cpf = $_POST['cpf_cons'];
+
     $nome = $_POST['nome_cons'];
     $telefone = $_POST['telefone'];
     $rua = $_POST['rua'];

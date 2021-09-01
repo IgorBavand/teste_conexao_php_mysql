@@ -37,7 +37,7 @@ background-size: cover;
 
 			<div class="col-lg-4">
 			<img class="rounded-circle" src="img/imobiliaria.jpg" alt="Generic placeholder image" width="140" height="140">
-			<h2 class="op">Mobiliarias</h2>
+			<h2 class="op">Imobiliarias</h2>
 			<p></p>
             <p><a class="btn btn-primary" href="adm_imobiliaria.php" role="button">Administrar Imobiliárias &raquo;</a></p>
 			</div>

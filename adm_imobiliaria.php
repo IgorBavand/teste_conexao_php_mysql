@@ -66,6 +66,7 @@ background-size: cover;
                 </div>
                 <div class="row d-flex justify-content-center">
                 <p><a href="cad_imobiliaria.php" class="btn btn-primary">Cadastrar nova imobiliaria</a></p>
+                <p><a class="btn btn-secondary ml-3" href="index.php">Home</a></p>
 
 
 
