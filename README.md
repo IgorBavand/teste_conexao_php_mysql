@@ -1,8 +1,7 @@
 ## 💻 Contribuidores<br>
 
 <table>
-  <tr>
-    
+  <tr>  
     <td align="center">
       <a href="#">
         <img src="https://i.ibb.co/98kX4CQ/igor.jpg" width="100px;" /><br>
@@ -11,8 +10,6 @@
         </sub>
       </a>
     </td>
-    
-    
     <td align="center">
       <a href="#">
         <img src="https://i.ibb.co/ZTkJ5kB/dfdfdfdf.png" width="100px;" /><br>
@@ -28,7 +25,6 @@
           <b>FRANCISCO EWERTHON</b>
         </sub>
       </a>
-    </td>
-    
+    </td>  
   </tr>
 </table>
