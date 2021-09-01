@@ -20,9 +20,9 @@
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://i.ibb.co/Wytqx3h/ewer.jpg" width="100px;" /><br>
+        <img src="https://i.ibb.co/VJQqKPh/joyce.jpg" width="100px;" /><br>
         <sub>
-          <b>FRANCISCO EWERTHON</b>
+          <b>JOYCE SIMÕES</b>
         </sub>
       </a>
     </td>  
