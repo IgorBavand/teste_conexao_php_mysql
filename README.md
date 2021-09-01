@@ -6,7 +6,7 @@
       <a href="#">
         <img src="https://i.ibb.co/P9vD2H4/wesley.jpg" width="100px;" /><br>
         <sub>
-          <b>WESLEY JONATHA</b>
+          <b>test</b>
         </sub>
       </a>
     </td>
