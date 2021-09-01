@@ -12,7 +12,7 @@
     
      <td align="center">
       <a href="#">
-        <img src="https://ibb.co/pdDvxzp" width="100px;" /><br>
+        <img src="https://i.ibb.co/ZTkJ5kB/dfdfdfdf.png"></a>" width="100px;" /><br>
         <sub>
           <b>IGOR NARDENIO</b>
         </sub>
