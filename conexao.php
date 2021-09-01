@@ -2,9 +2,9 @@
 
 session_start();
 
-$servidor = "localhost";
-	$usuario = "root";
-	$senha = "";
+$servidor = "127.0.0.1";
+	$usuario = "milena";
+	$senha = "12345";
 	$dbname = "alugue_facil";
 
 	//Criar a conexão

@@ -67,7 +67,15 @@ background-size: cover;
 			<img class="rounded-circle" src="img/imovel.jpg" alt="Generic placeholder image" width="140" height="140">
 			<h2>Imóveis</h2>
 			<p></p>
-            <p><a class="btn btn-primary" href="#" role="button">Administrar Imóveis &raquo;</a></p>
+            <p><a class="btn btn-primary" href="adm_imovel.php" role="button">Administrar Imóveis &raquo;</a></p>
+			</div>
+
+
+			<div class="col-lg-4">
+			<img class="rounded-circle" src="img/consulta.png" alt="Generic placeholder image" width="140" height="140">
+			<h2>Consultas</h2>
+			<p></p>
+            <p><a class="btn btn-primary" href="adm_consultas.php" role="button">Realizar consultas &raquo;</a></p>
 			</div>
 
 

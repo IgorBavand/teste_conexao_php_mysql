@@ -1,0 +1,1 @@
+UPDATE imovel SET qtd_quartos = '{$qtq}', qtd_banheiros = '{$qtb}', rua = '{$rua}', cep = '{$cep}',cidade = '{$cidade}', status_imovel = '{$st}', valor = '{$valor}', imobiliaria_cnpj = '{$i_cnpj}',locador_cpf = '{$l_cpf}', ult_reforma = '{$data_r}', construcao_imovel = '{$data_c}' WHERE imovel.id = {$id}
