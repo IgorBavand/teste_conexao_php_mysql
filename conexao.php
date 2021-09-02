@@ -11,6 +11,8 @@ session_start();
 	$db = mysqli_connect($servidor, $usuario, $senha, $dbname);
 
 
+
+//cadastrar
 if (isset($_POST['cad_i'])) {
 
 
@@ -42,7 +44,7 @@ if (isset($_POST['cad_i'])) {
 	}
 
 
-
+//editar
 if(isset($_GET['edit_i'])){
 	$_SESSION['cnpj_i'] = $_GET['edit_i'];
 
@@ -50,6 +52,8 @@ if(isset($_GET['edit_i'])){
 
 }
 
+
+//excluir
 if (isset($_GET['del'])) {
 	$cnpj = $_GET['del'];
 	//echo $cnpj;
